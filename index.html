@@ -12,6 +12,9 @@
 
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,500;1,600;1,800&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
@@ -23,9 +26,17 @@
       }
     }
   </script>
+  <style>
+    .font-famely{              
+      font-family: 'Lato', sans-serif;
+    }
+    .areas{
+
+    }
+  </style>
 </head>
 
-<body>
+<body class="font-famely">
 
 
   <!-- header section -->
@@ -79,7 +90,7 @@
           </div>
         </div>
       </div>
-      <div class="flex  bg-white absolute -bottom-16 left-60">
+      <div class="flex  bg-white invisible lg:visible absolute -bottom-16 left-60">
         <img src="images/fruit1.png">
         <img src="images/fruit2.png">
         <img src="images/fruit3.png">
@@ -350,15 +361,49 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="">
-        <h1>Why Choose Us</h1>
-        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+    <section class="max-w-6xl mt-24 mx-auto">
+      <div class=" w-96 mx-auto">
+        <h1 class="text-5xl mb-5">Why Choose Us</h1>
+        <p class="text-green-700">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
-      <div class="">
-        <img src="" alt="">
-        <h1>Dedicated Team</h1>
+     <div class=" grid grid-cols-1 lg:grid-cols-3 gap-7">
+      <div class="areas">
+        <i class="fa-solid fa-people-group"></i>
+   <span class="border-b-2 border-double font-bold text-3xl  border-black ">Dedicated Team</span>
+        <p class="text-green-700 mb-4 mt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+
+       
+        <i class="fa-solid fa-gift text-lg"></i>
+        <span class="border-b-2 border-double font-bold text-3xl  border-black ">Dedicated Grift</span> <p class="text-green-700 mb-4 mt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="border-b-2 border-double font-bold text-3xl  border-black ">Dedicated Like</span>
+        <p class="text-green-700 mb-4 mt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+
       </div>
+      <div class="areas"><img src="images/whychoose1.png" alt=""></div>
+      <div>
+        <div class="areas">
+          <i class="fa-solid fa-gift"></i>
+          <span class="border-b-2 border-double font-bold text-3xl  border-black ">Dedicated Grift</span>
+          <p class="text-green-700">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  
+        </div>
+        <div class="areas">
+          <i class="fa-solid fa-thumbs-up"></i>
+          <span class="border-b-2 border-double font-bold text-3xl  border-black ">Dedicated Like</span>
+          <p class="text-green-700">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  
+        </div>
+        <div class="areas">
+          <i class="fa-solid fa-people-group"></i>
+       
+          <span class="border-b-2 border-double font-bold text-3xl  border-black ">Dedicated Team</span>
+          <p class="text-green-700">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  
+        </div>
+      </div>
+     </div>
     </section>
   </main>
 
